@@ -1,0 +1,40 @@
+{
+  "name": "ljh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server  --config webpack.config.js --host 0.0.0.0"
+  },
+  "author": "",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^7.2.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "dependencies": {
+    "d3": "^4.4.0",
+    "inspire-tree": "^1.12.2",
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0",
+    "perfect-scrollbar": "^0.6.16",
+    "responsive-tabs": "^1.6.1"
+  }
+}

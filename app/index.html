@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LJH</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">BotRadar</h1>
+      <button class="btn-load-data"></button>
+      <div class='divide'></div>
+      <input type="search" placeholder="Search">
+    </header>
+    <div class="container">
+      <section class="up">
+        <div class="side-wrap view-wrap">
+          <div class="side view">
+            <h2 class="view-name">Control Panel</h2>
+            <div id="select" class="select"></div>
+          </div>
+        </div>
+        <div class="main-wrap view-wrap">
+          <div class="main view">
+            <h2 class="view-name">Dynamic Tree View</h2>
+            <div id="tooltip" class="tooltip">
+              <span class="angle"></span>
+            </div>
+            <svg id="inice"></svg>
+            <svg id="enLarge"></svg>
+            <svg id="iniceSmall"></svg>
+            <svg id="performance"></svg>
+          </div>
+        </div>
+        <div class="sub-wrap view-wrap">
+          <div id="tabs" class="tabs view">
+            <ul>
+              <li><a href="#tab-1" class="tab-a">Recommend</a></li>
+              <li><a href="#tab-2" class="tab-a">Display</a></li>
+            </ul>
+            <div id="tab-1">
+              <svg id="attrInfo"></svg>
+            </div>
+            <div id="tab-2">
+              <svg id="pathInfo"></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="down">
+        <div class="view-wrap">
+          <div class="view">
+            <h2 class="view-name">Individual Panel</h2>
+            <div id="tooltipId" class="tooltip2"></div>
+            <div id="details1">
+              <svg id="userInfo"></svg>
+            </div>
+          </div>
+        </div>
+        <div class="view-wrap">
+          <div class="view">
+            <h2 class="view-name">Group Panel</h2>
+            <div id="individual">
+              <div id="tooltip3" class="tooltip3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./bundle.js"></script>
+  </body>
+</html>

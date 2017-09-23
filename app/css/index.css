@@ -1,0 +1,430 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  min-width: 1000px;
+  font-family: 'Lato';
+  overflow-x: scroll;
+}
+
+header {
+  background-color: #c53033;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.btn-load-data {
+  background: url(open-file.png);
+  background-size:100% 100%;
+  margin-top: 0;
+  margin-left: auto;
+  background-color: transparent;
+  text-shadow: none;
+  box-shadow: none;
+  width: 28px;
+  height: 28px;
+  border-right-color:#000;
+  border-right-width:10px;
+  transition: 1s;
+}
+.btn-load-data:hover {
+  text-decoration: underline;
+}
+
+.container {
+  height: calc(100% - 50px);
+}
+
+
+/******** up ************/
+
+.up {
+  height: 70%;
+  display: flex;
+}
+
+.side-wrap {
+  padding-top: 10px !important;
+  flex: 1;
+}
+.main-wrap {
+  padding-top: 10px !important;
+  flex: 5;
+}
+.sub-wrap {
+  padding-top: 10px !important;
+  flex: 2;
+}
+
+.view-wrap {
+  padding: 5px;
+  height: 100%;
+}
+.view-wrap:first-child {
+  padding-left: 10px;
+}
+.view-wrap:last-child {
+  padding-right: 10px;
+}
+
+.view {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.view-name {
+  height: 30px;
+  display: block;
+  font-size: 16px;
+  text-indent: 10px;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 30px;
+}
+
+.tabs {
+  border: 0;
+  overflow: auto;
+}
+
+.main .view-name {
+  box-sizing: content-box;
+}
+#inice,
+#iniceSmall,
+#enLarge,
+#performance {
+  width: 100%;
+}
+#inice {
+  padding-left:10px;
+  height: 62%;
+}
+#enLarge {
+  padding-left:10px;
+  padding-top:10px;
+  height: 3%;
+}
+#iniceSmall {
+  padding-left:10px;
+  padding-top:10px;
+  height: 20%;
+}
+
+#performance {
+  padding-left:10px;
+  height: 10%;
+}
+
+
+#attrInfo {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.th {
+  fill: #F2F2F2;
+  stroke: #fff;
+}
+
+.td {
+  font-size: 14px;
+}
+
+.th-click {
+  fill: #888888;
+}
+
+.td-odd {
+  fill: #fff;
+}
+
+.td-even {
+  fill: #fff;
+}
+
+.td-select {
+  fill: #a6a6a6;
+}
+
+.td-over {
+  fill: #ddd;
+}
+
+.bg {
+  fill: #f4b5ac;
+  fill-opacity: 1;
+}
+
+/* attr info */
+.r-tabs-nav {
+  height: 30px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+}
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  background-color: #f2f2f2;
+}
+.r-tabs-tab {
+  flex: 1;
+  height: 100%;
+  font-size: 0;
+  text-align: center;
+}
+.r-tabs .r-tabs-nav .r-tabs-tab .tab-a {
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-shadow: none;
+  color: #000;
+  font-size: 16px;
+  background-color: white;
+  border-bottom: 1px solid #f2f2f2;
+}
+.r-tabs .r-tabs-nav .r-tabs-state-active .tab-a {
+  color: #c53033;
+  border-bottom: 2px solid #C53033;
+}
+
+#tab-1 {
+  overflow: hidden;
+}
+#tab-2 {
+  height: 90%;
+}
+
+#pathInfo {
+  width: 100%;
+}
+/*tree path*/
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.textGroup {
+  height: 100%;
+  width: 100%;
+}
+
+.webs polygon {
+   fill: white;
+   fill-opacity: 0.5;
+   stroke: gray;
+   stroke-dasharray: 10 5;
+}
+
+.areas polygon {
+  fill-opacity: 0.5;
+  stroke-width: 3;
+}
+.areas circle {
+  fill: white;
+  stroke-width: 3;
+}
+/******* line charts **/
+.axis path, .axis line {
+  fill: none;
+  stroke: #999;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 14px;
+  fill:#999;
+}
+.inner_line path, .inner_line line {
+  fill: none;
+  stroke: #E7E7E7;
+  shape-rendering: crispEdges;
+}
+
+
+/******* up end *******/
+
+
+/****** down *********/
+.down {
+  height: 30%;
+  display: flex;
+}
+.down .view-wrap {
+  width: 50%;
+  flex: 1;
+}
+#userInfo {
+  padding-left:5px;
+  padding-top:5px;
+  padding-right:5px;
+  padding-bottom:5px;
+  width:100%;
+}
+
+.rectPer  {
+  stroke:white;
+  stroke-width:0;
+}
+
+#details1 {
+  height: calc(100% - 30px);
+  position: relative;
+  overflow: hidden;
+}
+#individual {
+  height: calc(100% - 30px);
+  position: relative;
+  overflow: hidden !important;
+}
+#select {
+  height: calc(100% - 60px);
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+
+/****** down end ******/
+
+
+
+.attr-table {
+  width:100%;
+  height:calc(50% - 20px);
+}
+
+.tooltip, .tooltip2, .tooltip3 {
+  position: absolute;
+  z-index: 100;
+  padding: 4px;
+  /*width: 120px;  */
+  height: 20px;
+  font-size: 12px;
+  color: white;
+  background-color: #C53033;
+  opacity: 0;
+  text-align: center;
+}
+
+.tooltip:before, .tooltip2:before, .tooltip3:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: -9px;
+    top : 0px;
+    border-right: 9px solid #C53033;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.brush .extent {
+  stroke: #82978E;
+  opacity:0.2;
+  shape-rendering: crispEdges;
+}
+
+.selection-box{
+  fill:black;
+  opacity: 0.2;
+}
+
+/*.tooltip:after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid black;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}*/
+
+
+.search {
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  height: 30px;
+  width: 100%;
+}
+
+.inspire-tree [type=checkbox] {
+  left: 22px !important;
+  top: 6px !important;
+}
+.inspire-tree .toggle {
+  top: -2px !important;
+}
+
+/* search anitimate*/
+/* reset webkit search input browser style */
+input {
+  outline: none;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+  background: #ededed url(search-icon.png) no-repeat 3px center;
+  background-size:28px 28px;
+  border: solid 1px #C53033;
+  padding: 8px 10px 8px 32px;
+  background-color: #C53033;
+  padding-left: 7px;
+  width: 19px;
+  border-radius: 5em;
+  transition: all .5s;
+  color: transparent;
+  cursor: pointer;
+}
+input[type=search]:focus {
+  width: 130px;
+  padding-left: 32px;
+  background-color: #a71c1f;
+  border-color: #C53033;
+  color: #FFF;
+  cursor: auto;
+}
+
+input[type=search]:hover {
+  background-color: #a71c1f;
+  border-color: #C53033;
+}
+input:-moz-placeholder {
+  color: transparent;
+}
+input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.divide {
+  height:20px;
+  width:1px;
+  border-left:1px #a71c1f solid;
+  margin-right: 6px;
+}
